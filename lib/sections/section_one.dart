@@ -15,19 +15,19 @@ class SectionOne extends StatelessWidget {
           SizedBox(width: 30),
           LFText(
             text: 'Features',
-            color: LFColors.neutralGrayishViolet,
+            color: LFColors.grayishViolet,
             fontWeight: FontWeight.bold,
           ),
           SizedBox(width: 20),
           LFText(
             text: 'Pricing',
-            color: LFColors.neutralGrayishViolet,
+            color: LFColors.grayishViolet,
             fontWeight: FontWeight.bold,
           ),
           SizedBox(width: 20),
           LFText(
             text: 'Resources',
-            color: LFColors.neutralGrayishViolet,
+            color: LFColors.grayishViolet,
             fontWeight: FontWeight.bold,
           ),
           Expanded(child: Container()),
@@ -37,7 +37,7 @@ class SectionOne extends StatelessWidget {
               child: Text('Login',
                   style: TextStyle(
                     fontSize: 18,
-                    color: LFColors.neutralGrayishViolet,
+                    color: LFColors.grayishViolet,
                     fontWeight: FontWeight.bold,
                   ))),
           SizedBox(width: 10),

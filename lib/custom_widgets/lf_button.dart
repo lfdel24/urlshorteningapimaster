@@ -13,7 +13,7 @@ class LFFlatButton extends StatelessWidget {
         padding: padding,
         shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(30)),
         onPressed: () {},
-        color: LFColors.primaryCyan,
+        color: LFColors.cyan,
         child: Text(
           'Sign Up',
           style: TextStyle(

@@ -41,13 +41,13 @@ class _Column extends StatelessWidget {
         ),
         LFText(
           text: "Build your brand's recognition and get detailed",
-          color: LFColors.neutralGrayishViolet,
+          color: LFColors.grayishViolet,
           fontSize: 22,
           fontWeight: FontWeight.normal,
         ),
         LFText(
           text: "insights on how your links are performing.",
-          color: LFColors.neutralGrayishViolet,
+          color: LFColors.grayishViolet,
           fontSize: 22,
           fontWeight: FontWeight.normal,
         ),
