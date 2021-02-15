@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:urlshorteningapimaster/custom_widgets/lf_button.dart';
 import 'package:urlshorteningapimaster/custom_widgets/lf_text.dart';
 import 'package:urlshorteningapimaster/utils/lf_colors.dart';
 
@@ -10,12 +9,14 @@ class SectionThree extends StatelessWidget {
       color: LFColors.gray,
       child: Container(
           margin: EdgeInsets.only(left: 125, right: 175),
-          width: double.infinity,
-          height: 500,
+          height: 450,
           color: LFColors.gray,
           child: Column(
             children: [
-              Transform.translate(offset: Offset(0, -75), child: _ShortenIt()),
+              Transform.translate(
+                offset: Offset(0, -75),
+                child: _ShortenIt(),
+              ),
               SizedBox(height: 12),
               Transform.translate(
                 offset: Offset(0, -60),
@@ -72,9 +73,11 @@ class _ShortenIt extends StatelessWidget {
               ),
             ),
             SizedBox(width: 15),
-            LFFlatButton(
+            _FlatButton(
               text: 'Shorten It!',
               padding: EdgeInsets.symmetric(vertical: 22, horizontal: 70),
+              borderRadius: 25,
+              color: LFColors.cyan,
             ),
             SizedBox(width: 50),
           ],
@@ -103,14 +106,22 @@ class _Link extends StatelessWidget {
         child: Row(
           children: [
             SizedBox(width: 30),
-            Expanded(child: Text(text1)),
+            Expanded(
+                child: LFText(
+              text: text1,
+            )),
             LFText(
               text: text2,
               color: LFColors.cyan,
               fontSize: 18,
             ),
             SizedBox(width: 15),
-            _FlatButton(text: text3, color: color),
+            _FlatButton(
+              text: text3,
+              color: color,
+              padding: EdgeInsets.symmetric(horizontal: 12, vertical: 14),
+              borderRadius: 6,
+            ),
             SizedBox(width: 30)
           ],
         ));
@@ -120,13 +131,23 @@ class _Link extends StatelessWidget {
 class _FlatButton extends StatelessWidget {
   final String text;
   final Color color;
+  final double borderRadius;
+  final EdgeInsetsGeometry padding;
 
-  const _FlatButton({Key key, this.color, this.text}) : super(key: key);
+  const _FlatButton({
+    Key key,
+    this.color,
+    this.text,
+    this.borderRadius,
+    this.padding,
+  }) : super(key: key);
+
   @override
   Widget build(BuildContext context) {
     return FlatButton(
-        padding: EdgeInsets.symmetric(horizontal: 12, vertical: 12),
-        shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(6)),
+        padding: padding,
+        shape: RoundedRectangleBorder(
+            borderRadius: BorderRadius.circular(borderRadius)),
         onPressed: () {},
         color: color,
         child: Text(

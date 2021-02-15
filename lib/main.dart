@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/rendering.dart';
+import 'package:urlshorteningapimaster/sections/section_four.dart';
 import 'package:urlshorteningapimaster/sections/section_one.dart';
 import 'package:urlshorteningapimaster/sections/section_three.dart';
 import 'package:urlshorteningapimaster/sections/section_two.dart';
@@ -37,6 +38,7 @@ class _HomePage extends StatelessWidget {
             SectionTwo(),
             SizedBox(height: 140),
             SectionThree(),
+            SectionFour(),
             Text('aksdasdasd'),
             Text('aksdasdasd'),
             Text('aksdasdasd'),
