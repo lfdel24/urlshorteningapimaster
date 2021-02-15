@@ -7,7 +7,7 @@ class SectionFour extends StatelessWidget {
   Widget build(BuildContext context) {
     return Container(
       color: LFColors.gray,
-      height: 300,
+      height: 135,
       child: Column(
         mainAxisSize: MainAxisSize.min,
         children: [
